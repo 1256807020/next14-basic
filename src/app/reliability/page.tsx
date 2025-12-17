@@ -1,7 +1,11 @@
-import React from 'react'
-
+import homeSrc from "/public/reliability.webp";
+import Hero from "@/components/hero";
 export default function Reliability() {
   return (
-    <div>reliability page</div>
-  )
+    <Hero
+      imgUrl={homeSrc}
+      altText="Home"
+      content="Reliability Cloud Hosting"
+    ></Hero>
+  );
 }

@@ -1,7 +1,11 @@
-import React from 'react'
-
+import homeSrc from "/public/performance.webp";
+import Hero from "@/components/hero";
 export default function Performance() {
   return (
-    <div>performance page</div>
-  )
+    <Hero
+      imgUrl={homeSrc}
+      altText="Home"
+      content="Performance Cloud Hosting"
+    ></Hero>
+  );
 }

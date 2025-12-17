@@ -1,7 +1,11 @@
-import React from 'react'
-
+import homeSrc from "/public/scale.webp";
+import Hero from "@/components/hero";
 export default function Scale() {
   return (
-    <div>scale page</div>
-  )
+    <Hero
+      imgUrl={homeSrc}
+      altText="Home"
+      content="Scale Cloud Hosting"
+    ></Hero>
+  );
 }

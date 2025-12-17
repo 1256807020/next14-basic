@@ -14,7 +14,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="zh-cn">
-      <body className={"antialiased"}>
+      <body className={"antialiased relative h-screen"}>
         <Header></Header>
         {children}
       </body>
