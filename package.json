@@ -9,6 +9,10 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@prisma/client": "6.19.0",
+    "prisma": "^6.19.0",
+    "prisma-docs-generator": "^0.8.0",
+    "prisma-json-schema-generator": "^5.1.5",
     "react": "^18",
     "react-dom": "^18",
     "next": "14.2.35"
