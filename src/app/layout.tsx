@@ -7,14 +7,17 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({
-  children
+  children,
+  model,
 }: Readonly<{
   children: React.ReactNode;
+  model: React.ReactNode;
 }>) {
   return (
     <html lang="zh-cn">
       <body className={"antialiased relative h-screen"}>
         {children}
+        {model}
       </body>
     </html>
   );
