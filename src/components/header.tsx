@@ -2,7 +2,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import React from "react";
-
+const accessLink = ["/", "/performance", "/reliability", "/scale"];
 export default function Header() {
   const pathname = usePathname();
   const linkData = [
@@ -19,6 +19,7 @@ export default function Header() {
       path: "/scale",
     },
   ];
+  if (!accessLink.includes(pathname)) return null;
   return (
     <div className="absolute w-full z-10">
       <div className="flex justify-between container mx-auto p-8">
