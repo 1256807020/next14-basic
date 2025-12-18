@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Home",
@@ -8,27 +7,13 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({
-  children,
-  team,
-  analytics,
+  children
 }: Readonly<{
   children: React.ReactNode;
-  team: React.ReactNode;
-  analytics: React.ReactNode;
 }>) {
   return (
     <html lang="zh-cn">
       <body className={"antialiased relative h-screen"}>
-        <div className="container mx-auto">
-        <div className="flex justify-center text-blue-500 p-6 gap-6">
-          <Link href="/">home</Link>
-          <Link href="/visitors">visitors</Link>
-        </div>
-        <div className="flex gap-6 mb-6">
-          {team}
-          {analytics}
-        </div>
-        </div>
         {children}
       </body>
     </html>
