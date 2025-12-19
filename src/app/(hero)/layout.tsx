@@ -1,5 +1,5 @@
 import Header from "@/components/header";
-export default function RootLayout({
+export default function HeroLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
